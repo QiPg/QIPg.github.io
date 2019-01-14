@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+			}
+			.msg-top{
+				height: 30px;
+				line-height: 30px;
+				margin: 0 auto;
+				width: 60%;
+				font-size: 18px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.msg-top:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.msg-top span:first-child{
+				height: 30px;
+				line-height: 30px;
+				float: left;
+			}
+			.msg-top span:last-child{
+				height: 30px;
+				line-height: 30px;
+				float: right;
+			}
+			.msg-group{
+				margin: 0 auto;
+				width: 60%;
+				padding: 10px;
+				border-top:1px solid #ccc;
+				/* border-bottom:1px solid #ccc; */
+			}
+			.msg-group .msg-title{
+				margin-bottom: 10px;
+			}
+			.msg-group .msg-title:after{
+				content: '';
+				display: block;
+				clear: both;
+				
+			}
+			.msg-group .msg-title div{
+				float: left;
+			}
+			.msg-group .msg-title .msg-icon{
+				background: url('https://avatars1.githubusercontent.com/u/26831280?s=40&v=4') no-repeat;
+				background-size: cover;
+				border-radius: 50%;
+				height: 50px;
+				width: 50px;
+				color: bisque;
+				line-height: 50px;
+				text-align: center;
+			}
+			.msg-group .msg-title-name{
+				padding-left: 10px;
+			}
+			.msg-group .msg-title .msg-time{
+				margin-top: 8px;
+				float: none;
+				color:#777;
+			}
+			.msg-group .msg-browse{
+				margin-top: 20px;
+				font-size: 14px;
+				color:#777;
+			}
+			.msg-browse .msg-browse-float-right{
+			    font-size: 16px;
+				float: right;
+			}
+			.msg-browse .msg-browse-float-right span{
+				margin-left: 20px;
+			}
+			span{
+				cursor: pointer;
+			}
+			
+		</style>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	</head>
+	<body>
+		<div class="msg-top"><span class="fa fa-angle-left"></span>朋友圈<span class="fa fa-camera"></span></div>
+		<div class="msg-group">
+			<div class="msg-title">
+				<div class="msg-icon"></div>
+				<div class="msg-title-name">菜鸟攻城狮
+				<div class="msg-time">2018-10-24 03:45:30</div>
+				</div>
+			</div>
+			<div class="msg-content">
+				我的程序从来没有bug。
+			</div>
+			<div class="msg-browse">
+				<label>浏览55次</label><div class="msg-browse-float-right"><span class="fa fa-thumbs-o-up">10</span><span class="fa fa-commenting-o"></span><span class="fa fa-share-square-o"></span></div>
+			</div>
+		</div>
+	</body>
+</html>
