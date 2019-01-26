@@ -112,8 +112,16 @@
 				</div>
 			</div>
 			<div class="msg-browse">
-				<label>浏览55次</label><div class="msg-browse-float-right"><span class="fa fa-thumbs-o-up">10</span><span class="fa fa-commenting-o"></span><span class="fa fa-share-square-o"></span></div>
+				<label>浏览55次</label><div class="msg-browse-float-right"><span class="fa fa-thumbs-o-up" id="ztong">10</span><span class="fa fa-commenting-o"></span><span class="fa fa-share-square-o"></span></div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded',function(){
+				document.getElementById('ztong').addEventListener('click',function(){
+					document.getElementById('ztong').innerText=parseInt(document.getElementById('ztong').innerText)+1;
+				});
+			})
+			
+		</script>
 	</body>
 </html>
