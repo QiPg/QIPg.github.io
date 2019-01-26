@@ -92,11 +92,34 @@
 			  text-decoration: none;
 			  color: inherit;
 			}
-			
+			.img-show-gorup{
+				display: none;
+				top: 0;
+				bottom: 0;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 100;
+				background: rgba(0,0,0,0.6);
+				
+			}
+			.img-show{
+				position: relative;
+				width: 80%;
+				top: 50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+			}
+			.img-show img{
+				width: 100%;
+			}
 		</style>
 		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 	</head>
 	<body>
+		<div class="img-show-gorup" id="img-show-gorup">
+			<div class="img-show" id="img-show-id"></div>
+		</div>
 		<div class="msg-top"><span class="fa fa-angle-left"></span>朋友圈<span class="fa fa-camera"></span></div>
 		<div class="msg-group">
 			<div class="msg-title">
@@ -108,20 +131,30 @@
 			<div class="msg-content">
 				我的代码从来没有Bug
 				<div class="msg-content-img">
-					<img src="./imgs/bnd.jpg" width="30%"/>
+					<img src="./imgs/bnd.jpg" width="30%" onclick="openImgShow(this)"/>
 				</div>
 			</div>
 			<div class="msg-browse">
 				<label>浏览55次</label><div class="msg-browse-float-right"><span class="fa fa-thumbs-o-up" id="ztong">10</span><span class="fa fa-commenting-o"></span><span class="fa fa-share-square-o"></span></div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			document.addEventListener('DOMContentLoaded',function(){
-				document.getElementById('ztong').addEventListener('click',function(){
-					document.getElementById('ztong').innerText=parseInt(document.getElementById('ztong').innerText)+1;
-				});
-			})
-			
-		</script>
 	</body>
+	<script type="text/javascript">
+		//监听页面dom加载完
+		document.addEventListener('DOMContentLoaded',function(){
+			//点赞累计加
+			document.getElementById('ztong').addEventListener('click',function(){
+				document.getElementById('ztong').innerText=parseInt(document.getElementById('ztong').innerText)+1;
+			});
+			//点击图片关闭
+			document.getElementById('img-show-gorup').addEventListener('click',function(){
+				document.getElementById('img-show-gorup').style.display='none';
+			})
+		})
+		//点击查看图片
+		function openImgShow(_this){
+			document.getElementById('img-show-gorup').style.display='block';
+			document.getElementById('img-show-id').innerHTML='<img src="'+_this.src+'"/>';
+		}
+	</script>
 </html>
