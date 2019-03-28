@@ -1,7 +1,8 @@
 .title-sub{
+	width: 100%;
 	position: relative;
 	height:45rem ;
-	background: url(../img/mbg.png);
+	background: url(../img/mbg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
