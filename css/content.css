@@ -1,0 +1,75 @@
+.content{
+	width: 1118px;
+	margin: 0 auto;
+}
+.content .cell-title{
+	font-size: 2rem;
+	margin-top: 10px;
+	text-align: center;
+}
+.cell-title div{
+	padding-top:18px;
+}
+.cell-title .cl-t{
+	width: 54px;
+	margin: 0 auto;
+	border-bottom: 2px solid #e9424b;
+}
+.cell-title .cl-t1{
+	padding-bottom: 10px;
+    font-size: 1rem;
+}
+.content-cell .cell-text{
+	text-align: center;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+}
+.cell-text div{
+	flex-basis: 200px;
+	cursor: pointer;
+}
+
+.cell-text .text-img img{
+	width: 100%;
+}
+.cell-text .text-t{
+	padding:10px 0;
+	font-size: 2.5rem;
+}
+.cell-text .text-c{
+	font-size: 2rem;
+}
+.cell-text-rol{
+	position: relative;
+}
+.cell-text-rol .rol-active{
+	display: none;
+	position: absolute;
+	background: red;
+	width: 100%;
+	height: 66%;
+	opacity:0.1;
+	transition: 0.5s opacity;
+	bottom: 0;
+	color: #fff;
+}
+.rol-active:hover{
+	opacity:0.8;
+}
+.cell-text .text-cot{
+	padding:10px;
+	text-align: center;
+	font-size: 0.8rem;
+}
+.text-icon{
+	position:absolute;
+	width: 100%;
+	bottom: 10px;
+}
+
+.text-icon span{
+	font-size: 2rem;
+}

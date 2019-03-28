@@ -52,7 +52,7 @@
 				float: left;
 			}
 			.msg-group .msg-title .msg-icon{
-				background: url(./imgs/icon.jpg) no-repeat;
+				background: url(./img/icon.jpg) no-repeat;
 				background-size: cover;
 				border-radius: 50%;
 				height: 50px;
@@ -120,7 +120,7 @@
 		<div class="img-show-gorup" id="img-show-gorup">
 			<div class="img-show" id="img-show-id"></div>
 		</div>
-		<div class="msg-top"><span class="fa fa-angle-left"></span>朋友圈<span class="fa fa-camera"></span></div>
+		<div class="msg-top"><span class="fa fa-angle-left"></span>朋友圈<span onclick="openBl()" class="fa fa-camera"></span></div>
 		<div class="msg-group">
 			<div class="msg-title">
 				<div class="msg-icon"></div>
@@ -131,7 +131,7 @@
 			<div class="msg-content">
 				我的代码从来没有Bug
 				<div class="msg-content-img">
-					<img src="./imgs/bnd.jpg" width="30%" onclick="openImgShow(this)"/>
+					<img src="./img/bnd.jpg" width="30%" onclick="openImgShow(this)"/>
 				</div>
 			</div>
 			<div class="msg-browse">
@@ -155,6 +155,11 @@
 		function openImgShow(_this){
 			document.getElementById('img-show-gorup').style.display='block';
 			document.getElementById('img-show-id').innerHTML='<img src="'+_this.src+'"/>';
+		}
+		//打开设计页面
+		function openBl(){
+			
+			window.open('./home.html','_blank');
 		}
 	</script>
 </html>

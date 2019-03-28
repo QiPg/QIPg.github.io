@@ -1,0 +1,62 @@
+.title-sub{
+	position: relative;
+	height:45rem ;
+	background: url(../img/mbg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.title-sub .title-sub-buttom{
+	box-sizing: border-box;
+	bottom: 0;
+	width: 100%;
+	z-index: 333;
+	position: absolute;
+	height: 11rem;
+	background: rgba(0,0,0,0.5);
+}
+.title-sub-buttom-content{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 1118px;
+	height: 100%;
+	margin: 0 auto;
+	align-items:center;
+	justify-content: space-between;
+}
+.title-sub-buttom-content .buttom-content-rol{
+	color: #fff;
+	flex-grow: 1;
+	box-sizing: border-box;
+	height: 100%;
+}
+.title-sub-buttom-content .buttom-content-rol span{
+	font-size: 8rem;
+	line-height: 11rem;
+	float:left;
+	cursor: pointer;
+}
+.title-sub-buttom-content .sub-left-text{
+	position: relative;
+	font-size: 1.2rem;
+	float:left;
+	padding-left: 2rem;
+	height: 100%;
+}
+.sub-left-text .sub-left-text-cell1{
+	top: 50%;
+	margin-top: -30%;
+	left: -20px;
+	position: absolute;
+	height: 2rem;
+	line-height: none;
+	transform: rotate(90deg);
+}
+.sub-left-text .sub-left-text-cell2{
+	position: absolute;
+	top: 50%;
+	margin-top:-160%;
+	width: 2rem;
+	text-align: center;
+}

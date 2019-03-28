@@ -1,0 +1,84 @@
+header{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 1118px;
+	justify-content: space-around;
+	background: #fff;
+	margin: 0 auto;
+}
+.header-left{
+	float: left;
+	height: 8.75rem;
+	flex-basis: 14.75rem;
+	position: relative;
+}
+.header-left div:nth-of-type(1){
+	background: url(../img/logo.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 74px;
+	height: 74px;
+	position: absolute;
+	top:50%;
+	transform:translateY(-37px);
+	-ms-transform:translateY(-37px);
+	-webkit-transform:translateY(-37px) ;
+}
+.header-left div:nth-of-type(2){
+	background: url(../img/logotext.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 43px;
+	position: absolute;
+	left:86px ;
+	top: 50%;
+	transform:translateY(-22px);
+	-ms-transform:translateY(-22px);
+	-webkit-transform:translateY(-22px) ;
+}
+.header-right{
+	height: 8.75rem;
+	float: right;
+	flex-basis: 41rem;
+}
+.header-right nav{
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	height: 100%;
+}
+.header-right nav a:active{
+	color: red;
+}
+.header-right nav a{
+	padding:12px 0;
+	text-align: center;
+	margin:0 10px;
+	flex-grow: 1;
+	flex-basis: 0;
+	font-size: 1.80rem;
+}
+a .header-nav{
+	display: inline-block;
+	
+}
+.nav-buttom{
+	color: #e9424b!important;
+	border-bottom: 2px #e9424b solid;
+}
+.nav-buttom-p{
+	color: #e9424b!important;
+}
+.header-right .header-nav p{
+	color: #c2c2c2;
+	font-size: 1.2rem;
+	margin: 10px 0;
+	
+}

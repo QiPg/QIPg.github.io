@@ -1,0 +1,38 @@
+/* 格式文档 */
+html,body{
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+/* 格式化a标签 */
+a{
+	text-decoration: none;
+	color:#60605f;
+}
+/* 清除浮动 */
+.fexclear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 黑色 */
+.mcolor-black{
+	color:#60605f;
+}
+/* 偏红色 */
+.mcolor-red{
+	color:#e9424b;
+}
+/* 偏灰色 */
+.mcolor-gray{
+	color:#c2c2c2;
+}
+/* 元素显示 */
+.mshow{
+	display: block!important;
+}
+/* 元素隐藏 */
+.mhide{
+	display: none !important;
+}
